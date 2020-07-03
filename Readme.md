@@ -1,9 +1,3 @@
-#Challenge certificat Techzara
+# Challenge certificat Techzara
 
-
-   ___  ______               _
-  |_  | | ___ \             | |
-    | | | |_/ / __ _   _  __| | ___ _ __   ___ ___
-    | | |  __/ '__| | | |/ _` |/ _ \ '_ \ / __/ _ \
-/\__/ / | |  | |  | |_| | (_| |  __/ | | | (_|  __/
-\____/  \_|  |_|   \__,_|\__,_|\___|_| |_|\___\___|
+https://jprudence.github.io/challenge-certificat/
