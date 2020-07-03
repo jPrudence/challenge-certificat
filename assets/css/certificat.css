@@ -1,0 +1,235 @@
+section.certificat {
+  background-color: #0aaaea;
+  border: 10px solid #0aaaea;
+  width: 21cm;
+  min-width: 21cm;
+  height: 14.6cm;
+  min-height: 14.6cm;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  font-size: 18pt;
+  font-family: sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+section.certificat p {
+  margin: 10px 0;
+}
+section.certificat .logo {
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+section.certificat .logo span:nth-child(2) {
+  margin-left: 10px;
+  padding: 0 2px;
+  position: relative;
+}
+section.certificat .logo span:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 68%;
+  margin-top: -5px;
+  margin-left: -11px;
+  background-color: #0aaaea;
+}
+section.certificat .content-left {
+  user-select: none;
+  position: absolute;
+  left: 50px;
+}
+section.certificat .content-left .ico-bookmark {
+  font-size: 80pt;
+  color: #0aaaea;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 6cm;
+}
+section.certificat .content-left .ico-bookmark:before {
+  content: "";
+  width: 58pt;
+  left: 0.4px;
+  height: 7.5cm;
+  top: -210%;
+  position: absolute;
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7);
+}
+section.certificat .content-left .ico-certificate {
+  position: relative;
+  font-size: 100pt;
+  left: -18px;
+  color: #0aaaea;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+section.certificat .content-left .ico-certificate .logo {
+  background-color: white;
+  position: absolute;
+  top: 26px;
+  left: 18px;
+  font-size: 27pt;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+section.certificat .content-left .ico-certificate .logo span {
+  font-style: italic;
+  position: relative;
+  top: 8px;
+  left: -5px;
+}
+section.certificat .content-left .ico-certificate .logo span:nth-child(2):before {
+  background-color: transparent;
+}
+section.certificat .content {
+  position: absolute;
+  right: -110px;
+  padding: 25px 17px;
+  padding-right: 90px;
+  transform: skewX(-23deg);
+  background-color: white;
+  height: 100%;
+  width: 75%;
+}
+section.certificat .content .title, section.certificat .content .section-1 {
+  font-family: "Oswald", sans-serif;
+}
+section.certificat .content .title {
+  color: #0aaaea;
+  font-weight: 800;
+  padding-left: 45px;
+  font-size: 19pt;
+  letter-spacing: 2px;
+}
+section.certificat .content .title * {
+  margin-top: 0px;
+  display: inline-block;
+}
+section.certificat .content .title .star {
+  position: relative;
+  top: -2px;
+  padding-left: 10px;
+  font-size: 14pt;
+  transform: skewX(23deg);
+}
+section.certificat .content .title .star i {
+  padding: 0 5px;
+  color: #555;
+}
+section.certificat .content .title .star[note="1"] i:nth-child(1) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="2"] i:nth-child(1) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="2"] i:nth-child(2) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="3"] i:nth-child(1) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="3"] i:nth-child(2) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="3"] i:nth-child(3) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="4"] i:nth-child(1) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="4"] i:nth-child(2) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="4"] i:nth-child(3) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="4"] i:nth-child(4) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="5"] i:nth-child(1) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="5"] i:nth-child(2) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="5"] i:nth-child(3) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="5"] i:nth-child(4) {
+  color: #0aaaea !important;
+}
+section.certificat .content .title .star[note="5"] i:nth-child(5) {
+  color: #0aaaea !important;
+}
+section.certificat .content .section-2, section.certificat .content .section-3, section.certificat .content .section-4, section.certificat .content .section-5, section.certificat .content footer {
+  transform: skewX(23deg);
+}
+section.certificat .content .section-1 p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30pt;
+  margin-top: 0;
+  font-weight: 800;
+  line-height: 22pt;
+  letter-spacing: 1px;
+}
+section.certificat .content .section-1 p.badge {
+  padding: 4px 10px;
+  background-color: #0aaaea;
+  font-size: 20pt;
+  color: white;
+  position: relative;
+  top: -5px;
+}
+section.certificat .content .section-2, section.certificat .content .section-4 {
+  font-weight: bold;
+}
+section.certificat .content .groupe-1 {
+  border-left: 23px solid #0aaaea;
+  padding-left: 24px;
+  padding-bottom: 12px;
+}
+section.certificat .content .groupe-1 .section-4 {
+  padding-left: 60px;
+}
+section.certificat .content .groupe-1 .section-4 span {
+  line-height: 28pt;
+  display: block;
+  position: relative;
+}
+section.certificat .content .groupe-1 .section-4 span:nth-child(1) {
+  left: 0px;
+}
+section.certificat .content .groupe-1 .section-4 span:nth-child(2) {
+  left: -14px;
+}
+section.certificat .content .groupe-1 .section-4 span:nth-child(3) {
+  left: -28px;
+}
+section.certificat .content .groupe-1 .groupe-2 {
+  padding-top: 10px;
+  margin-top: 35px;
+  padding-left: 30px;
+  border-left: 10px solid #0aaaea;
+}
+section.certificat .content .section-3, section.certificat .content .section-5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 31pt;
+}
+section.certificat .content .section-5 {
+  line-height: 28pt;
+  padding-left: 90px;
+}
+section.certificat footer {
+  line-height: 28pt;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  font-size: 11pt;
+}
+section.certificat footer p {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=certificat.css.map */
