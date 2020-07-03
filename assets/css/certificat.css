@@ -12,27 +12,10 @@ section.certificat {
   font-family: sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   color: black;
+  cursor: default;
 }
 section.certificat p {
   margin: 10px 0;
-}
-section.certificat .logo {
-  color: black;
-  font-family: "Oswald", sans-serif;
-}
-section.certificat .logo span:nth-child(2) {
-  margin-left: 10px;
-  padding: 0 2px;
-  position: relative;
-}
-section.certificat .logo span:nth-child(2):before {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 68%;
-  margin-top: -5px;
-  margin-left: -11px;
-  background-color: #0aaaea;
 }
 section.certificat .content-left {
   user-select: none;
@@ -41,7 +24,7 @@ section.certificat .content-left {
 }
 section.certificat .content-left .ico-bookmark {
   font-size: 80pt;
-  color: #0aaaea;
+  color: white;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   position: relative;
   top: 6cm;
@@ -49,38 +32,27 @@ section.certificat .content-left .ico-bookmark {
 section.certificat .content-left .ico-bookmark:before {
   content: "";
   width: 58pt;
-  left: 0.4px;
+  left: 0px;
   height: 7.5cm;
   top: -210%;
   position: absolute;
+  background-color: white;
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7);
 }
 section.certificat .content-left .ico-certificate {
   position: relative;
   font-size: 100pt;
   left: -18px;
-  color: #0aaaea;
+  color: white;
   text-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 section.certificat .content-left .ico-certificate .logo {
-  background-color: white;
   position: absolute;
-  top: 26px;
+  top: 35px;
   left: 18px;
-  font-size: 27pt;
-  text-align: center;
   border-radius: 50%;
   width: 80px;
   height: 80px;
-}
-section.certificat .content-left .ico-certificate .logo span {
-  font-style: italic;
-  position: relative;
-  top: 8px;
-  left: -5px;
-}
-section.certificat .content-left .ico-certificate .logo span:nth-child(2):before {
-  background-color: transparent;
 }
 section.certificat .content {
   position: absolute;
@@ -92,75 +64,92 @@ section.certificat .content {
   height: 100%;
   width: 75%;
 }
-section.certificat .content .title, section.certificat .content .section-1 {
+section.certificat .content > div > .title, section.certificat .content .section-1 {
   font-family: "Oswald", sans-serif;
 }
-section.certificat .content .title {
+section.certificat .content > div > .title {
   color: #0aaaea;
   font-weight: 800;
   padding-left: 45px;
   font-size: 19pt;
   letter-spacing: 2px;
+  position: relative;
 }
-section.certificat .content .title * {
+section.certificat .content > div > .title * {
   margin-top: 0px;
   display: inline-block;
 }
-section.certificat .content .title .star {
+section.certificat .content > div > .title .star {
   position: relative;
   top: -2px;
   padding-left: 10px;
   font-size: 14pt;
   transform: skewX(23deg);
 }
-section.certificat .content .title .star i {
+section.certificat .content > div > .title .star i {
   padding: 0 5px;
-  color: #555;
+  color: #999;
 }
-section.certificat .content .title .star[note="1"] i:nth-child(1) {
+section.certificat .content > div > .title .star[note="1"] i:nth-child(1) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="2"] i:nth-child(1) {
+section.certificat .content > div > .title .star[note="2"] i:nth-child(1) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="2"] i:nth-child(2) {
+section.certificat .content > div > .title .star[note="2"] i:nth-child(2) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="3"] i:nth-child(1) {
+section.certificat .content > div > .title .star[note="3"] i:nth-child(1) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="3"] i:nth-child(2) {
+section.certificat .content > div > .title .star[note="3"] i:nth-child(2) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="3"] i:nth-child(3) {
+section.certificat .content > div > .title .star[note="3"] i:nth-child(3) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="4"] i:nth-child(1) {
+section.certificat .content > div > .title .star[note="4"] i:nth-child(1) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="4"] i:nth-child(2) {
+section.certificat .content > div > .title .star[note="4"] i:nth-child(2) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="4"] i:nth-child(3) {
+section.certificat .content > div > .title .star[note="4"] i:nth-child(3) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="4"] i:nth-child(4) {
+section.certificat .content > div > .title .star[note="4"] i:nth-child(4) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="5"] i:nth-child(1) {
+section.certificat .content > div > .title .star[note="5"] i:nth-child(1) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="5"] i:nth-child(2) {
+section.certificat .content > div > .title .star[note="5"] i:nth-child(2) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="5"] i:nth-child(3) {
+section.certificat .content > div > .title .star[note="5"] i:nth-child(3) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="5"] i:nth-child(4) {
+section.certificat .content > div > .title .star[note="5"] i:nth-child(4) {
   color: #0aaaea !important;
 }
-section.certificat .content .title .star[note="5"] i:nth-child(5) {
+section.certificat .content > div > .title .star[note="5"] i:nth-child(5) {
   color: #0aaaea !important;
+}
+section.certificat .content > div > .title .mention {
+  opacity: 0.5;
+  position: absolute;
+  top: 35px;
+  transform: skewX(23deg);
+  font-size: 11pt;
+  margin-left: 26px;
+}
+section.certificat .content > div > .title .mention .title {
+  color: #999;
+  font-size: 8pt;
+}
+section.certificat .content > div > .title:hover .mention {
+  transition: 0.3s;
+  opacity: 1;
 }
 section.certificat .content .section-2, section.certificat .content .section-3, section.certificat .content .section-4, section.certificat .content .section-5, section.certificat .content footer {
   transform: skewX(23deg);
@@ -173,6 +162,22 @@ section.certificat .content .section-1 p {
   font-weight: 800;
   line-height: 22pt;
   letter-spacing: 1px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+section.certificat .content .section-1 p span:nth-child(2) {
+  margin-left: 10px;
+  padding: 0 2px;
+  position: relative;
+}
+section.certificat .content .section-1 p span:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 68%;
+  margin-top: -5px;
+  margin-left: -11px;
+  background-color: #0aaaea;
 }
 section.certificat .content .section-1 p.badge {
   padding: 4px 10px;
@@ -222,6 +227,7 @@ section.certificat .content .section-5 {
   padding-left: 90px;
 }
 section.certificat footer {
+  color: #999;
   line-height: 28pt;
   position: absolute;
   bottom: 0;
