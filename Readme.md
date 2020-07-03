@@ -1,3 +1,2 @@
 # Challenge certificat Techzara
-
-https://jprudence.github.io/challenge-certificat/
+https://jprudence.github.io/challenge-certificat
