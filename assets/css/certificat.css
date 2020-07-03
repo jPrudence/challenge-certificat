@@ -49,7 +49,7 @@ section.certificat .content-left .ico-certificate {
   font-size: 100pt;
   left: -18px;
   color: white;
-  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 section.certificat .content-left .ico-certificate .logo {
   position: absolute;
