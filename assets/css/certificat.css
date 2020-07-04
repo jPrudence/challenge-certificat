@@ -1,20 +1,16 @@
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap);
 section.certificat {
   background-color: #0aaaea;
-  border: 10px solid #0aaaea;
-  width: 21cm;
-  min-width: 384px !important;
-  height: 14.6cm;
   position: relative;
   overflow: hidden;
   text-align: left;
-  font-size: 18pt;
   font-family: sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  color: black;
+  color: #123;
+  min-width: 300px !important;
+  display: block !important;
   cursor: default;
-}
-section.certificat p {
-  margin: 10px 0;
 }
 section.certificat .container-certificat {
   width: 100%;
@@ -25,49 +21,40 @@ section.certificat .container-certificat {
 section.certificat .content-left {
   user-select: none;
   position: absolute;
-  left: 50px;
 }
 section.certificat .content-left .ico-bookmark {
-  font-size: 80pt;
+  position: relative;
   color: white;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-  top: 6cm;
 }
 section.certificat .content-left .ico-bookmark:before {
   content: "";
-  width: 58pt;
-  left: 0px;
-  height: 7.5cm;
-  top: -210%;
   position: absolute;
   background-color: white;
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7);
 }
+section.certificat .content-left .ico-bookmark:after {
+  content: "";
+  position: absolute;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 100%;
+  background: white;
+}
 section.certificat .content-left .ico-certificate {
   position: relative;
-  font-size: 100pt;
-  left: -18px;
-  color: white;
-  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+section.certificat .content-left .ico-certificate svg {
+  z-index: 2000;
 }
 section.certificat .content-left .ico-certificate .logo {
   position: absolute;
-  top: 35px;
-  left: 18px;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
 }
 section.certificat .content {
   position: absolute;
-  right: -110px;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 25px 17px;
-  padding-right: 90px;
   transform: skewX(-23deg);
   height: 100%;
-  width: 75%;
 }
 section.certificat .content .title, section.certificat .content .section-1 {
   font-family: "Oswald", sans-serif;
@@ -75,8 +62,6 @@ section.certificat .content .title, section.certificat .content .section-1 {
 section.certificat .content .title {
   color: #0aaaea;
   font-weight: 800;
-  padding-left: 45px;
-  font-size: 19pt;
   letter-spacing: 2px;
   position: relative;
 }
@@ -87,12 +72,9 @@ section.certificat .content .title * {
 section.certificat .content .title .star {
   position: relative;
   top: -2px;
-  padding-left: 10px;
-  font-size: 14pt;
   transform: skewX(23deg);
 }
 section.certificat .content .title .star i {
-  padding: 0 5px;
   color: #999;
 }
 section.certificat .content .title .star[note="1"] i:nth-child(1) {
@@ -143,14 +125,10 @@ section.certificat .content .title .star[note="5"] i:nth-child(5) {
 section.certificat .content .title .mention {
   opacity: 0.5;
   position: absolute;
-  top: 35px;
   transform: skewX(23deg);
-  font-size: 11pt;
-  margin-left: 26px;
 }
 section.certificat .content .title .mention .title-mention {
   color: #999;
-  font-size: 8pt;
 }
 section.certificat .content .title:hover .mention {
   transition: 0.3s;
@@ -162,10 +140,8 @@ section.certificat .content .section-2, section.certificat .content .section-3, 
 section.certificat .content .section-1 p {
   display: inline-block;
   font-weight: bold;
-  font-size: 30pt;
   margin-top: 0;
   font-weight: 800;
-  line-height: 22pt;
   letter-spacing: 1px;
   color: black;
   font-family: "Oswald", sans-serif;
@@ -180,31 +156,24 @@ section.certificat .content .section-1 p span:nth-child(2):before {
   position: absolute;
   width: 8px;
   height: 68%;
-  margin-top: -5px;
   margin-left: -11px;
   background-color: #0aaaea;
 }
 section.certificat .content .section-1 p.badge {
-  padding: 4px 10px;
   background-color: #0aaaea;
-  font-size: 20pt;
   color: white;
   position: relative;
-  top: -5px;
 }
 section.certificat .content .section-2, section.certificat .content .section-4 {
   font-weight: bold;
 }
 section.certificat .content .groupe-1 {
-  border-left: 23px solid #0aaaea;
-  padding-left: 24px;
   padding-bottom: 12px;
 }
 section.certificat .content .groupe-1 .section-4 {
   padding-left: 60px;
 }
 section.certificat .content .groupe-1 .section-4 span {
-  line-height: 28pt;
   display: block;
   position: relative;
 }
@@ -220,16 +189,10 @@ section.certificat .content .groupe-1 .section-4 span:nth-child(3) {
 section.certificat .content .groupe-1 .groupe-2 {
   padding-top: 10px;
   margin-top: 35px;
-  padding-left: 30px;
   border-left: 10px solid #0aaaea;
 }
 section.certificat .content .section-3, section.certificat .content .section-5 {
   font-family: "Dancing Script", cursive;
-  font-size: 31pt;
-}
-section.certificat .content .section-5 {
-  line-height: 28pt;
-  padding-left: 90px;
 }
 section.certificat footer {
   color: #999;
@@ -241,84 +204,116 @@ section.certificat footer {
 section.certificat footer p {
   display: inline-block;
 }
+section.certificat.presentation {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 2.5px -2.5px rgba(10, 170, 234, 0.95), 5px -5px rgba(10, 170, 234, 0.9), 7.5px -7.5px rgba(10, 170, 234, 0.85), 10px -10px 2px rgba(0, 0, 0, 0.3);
+  transform: rotate(27deg) skewX(30deg) scale(0.5);
+}
+section.certificat.presentation .ico-bookmark:after {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
 
 /*global-size .title-size*/
-/*certificat-i-size bookmark-top bar-width bar-height*/
-/* top left-logo width-height left-i-certificate*/
+/*bookmark-top bar-width bar-top bar-height*/
+/* top-certificat-icon width-height-certificat-icon left-shadow-certificat-icon*/
+/* top-shadow-certificat-icon left-shadow-certificat-icon*/
+/* top left-logo width-height */
 /* pading-left */
 /* pading-left */
 /* left */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   section.certificat {
-    height: 12.5cm;
-    font-size: 2vw;
+    border: 10px solid #0aaaea;
+    height: 14.5cm;
+    max-width: 23cm;
+    width: 29cm;
+    font-size: 18pt;
+  }
+  section.certificat p {
+    margin: 9px 0;
+  }
+  section.certificat .content-left {
+    left: 80px;
   }
   section.certificat .content-left .ico-bookmark {
-    font-size: 60pt;
+    font-size: 65pt;
     top: 4.6cm;
   }
   section.certificat .content-left .ico-bookmark:before {
-    width: 43pt;
-    top: -210%;
-    height: 5.3cm;
+    width: 63px;
+    top: -190%;
+    height: 5.5cm;
+  }
+  section.certificat .content-left .ico-bookmark:after {
+    height: 100px;
+    width: 100px;
+    top: -67px;
+    left: -20px;
   }
   section.certificat .content-left .ico-certificate {
-    font-size: 80pt;
-    left: -17px;
+    top: 5px;
+    left: -22px;
+  }
+  section.certificat .content-left .ico-certificate svg {
+    width: 106px;
+    height: 106px;
   }
   section.certificat .content-left .ico-certificate .logo {
-    top: 31px;
-    left: 17px;
-    width: 60px;
-    height: 60px;
+    top: 13px;
+    left: 14px;
+    width: 80px;
+    height: 80px;
   }
   section.certificat .content {
-    padding: 22.5px 13px;
-    right: -94px !important;
-    width: 80%;
+    padding: 25px 17px;
+    right: -110px !important;
+    width: 87%;
   }
   section.certificat .content p {
     margin: 8px 0;
   }
   section.certificat .content .title {
-    font-size: 2vw;
+    font-size: 19pt;
+    padding-left: 30px;
   }
   section.certificat .content .title .star {
-    font-size: 17px;
+    font-size: 15pt;
+    padding-left: 10px;
   }
   section.certificat .content .title .star i {
-    padding: 0 0px;
+    padding: 0 8px;
   }
   section.certificat .content .title .mention {
-    font-size: 17px;
-    top: 28.5px;
-    margin-left: 23px;
+    font-size: 11pt;
+    top: 35px;
+    margin-left: 30px;
   }
   section.certificat .groupe-1 {
-    border-left-width: 19px !important;
-    padding-left: 9px !important;
+    border-left: 23px solid #0aaaea;
+    padding-left: 30px !important;
   }
   section.certificat .groupe-1 .groupe-2 {
-    border-left-width: 6px !important;
-    padding-left: 26px !important;
-    margin-top: 27px !important;
+    border-left-width: 10px !important;
+    padding-left: 30px !important;
+    margin-top: 30px !important;
     padding-top: 9px !important;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p {
-    font-size: 25pt;
+    font-size: 30pt;
+    line-height: 22pt;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p span:nth-child(2):before {
-    margin-top: -1.8px !important;
+    margin-top: -4px !important;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p.badge {
-    font-size: 16pt;
-    padding: 3px 8px;
+    font-size: 20pt;
+    padding: 4px 10px;
+    top: -4.5px;
   }
   section.certificat .groupe-1 .section-4 {
     padding-left: 54px !important;
   }
   section.certificat .groupe-1 .section-4 span {
-    line-height: 23pt !important;
+    line-height: 24.2pt !important;
   }
   section.certificat .groupe-1 .section-4 span:nth-child(1) {
     left: -3px !important;
@@ -329,89 +324,115 @@ section.certificat footer p {
   section.certificat .groupe-1 .section-4 span:nth-child(3) {
     left: -28.6px !important;
   }
+  section.certificat .section-2 {
+    margin-top: 20px;
+  }
   section.certificat .section-3, section.certificat .section-5 {
-    font-size: 4vw !important;
+    font-size: 31pt;
   }
   section.certificat .section-5 {
-    line-height: 18pt !important;
-    padding-left: 69px !important;
+    line-height: 28pt !important;
+    padding-left: 95px !important;
   }
   section.certificat footer {
-    left: 29% !important;
+    left: 23% !important;
     font-size: 9.5pt;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   section.certificat {
-    height: 9.5cm;
-    font-size: 2vw;
+    border: 8px solid #0aaaea;
+    height: 12cm;
+    max-width: 20.5cm;
+    width: 26.5cm;
+    font-size: 15pt;
+  }
+  section.certificat p {
+    margin: 8px 0;
+  }
+  section.certificat .content-left {
+    left: 65px;
   }
   section.certificat .content-left .ico-bookmark {
-    font-size: 40pt;
-    top: 3.35cm;
+    font-size: 50pt;
+    top: 4.6cm;
   }
   section.certificat .content-left .ico-bookmark:before {
-    width: 28pt;
-    top: -210%;
-    height: 3.7cm;
+    width: 48px;
+    top: -230%;
+    height: 5.2cm;
+  }
+  section.certificat .content-left .ico-bookmark:after {
+    height: 84px;
+    width: 84px;
+    top: -55px;
+    left: -18px;
   }
   section.certificat .content-left .ico-certificate {
-    font-size: 60pt;
-    left: -16px;
+    top: 43px;
+    left: -18px;
+  }
+  section.certificat .content-left .ico-certificate svg {
+    width: 84px;
+    height: 84px;
   }
   section.certificat .content-left .ico-certificate .logo {
-    top: 21px;
-    left: 11px;
-    width: 48px;
-    height: 48px;
+    top: 12px;
+    left: 12px;
+    width: 60px;
+    height: 60px;
   }
   section.certificat .content {
-    padding: 20px 9px;
-    right: -78px !important;
-    width: 85%;
+    padding: 22.5px 15px;
+    right: -90px !important;
+    width: 88%;
   }
   section.certificat .content p {
     margin: 6px 0;
   }
   section.certificat .content .title {
-    font-size: 2vw;
+    font-size: 16pt;
+    padding-left: 28px;
   }
   section.certificat .content .title .star {
-    font-size: 11px;
+    font-size: 12.2pt;
+    padding-left: 8px;
   }
   section.certificat .content .title .star i {
-    padding: 0 0px;
+    padding: 0 6.2px;
   }
   section.certificat .content .title .mention {
-    font-size: 11px;
-    top: 22px;
-    margin-left: 20px;
+    font-size: 5pt;
+    top: 30.5px;
+    margin-left: 25px;
   }
   section.certificat .groupe-1 {
-    border-left-width: 15px !important;
-    padding-left: -6px !important;
+    border-left: 19px solid #0aaaea;
+    padding-left: 24px !important;
   }
   section.certificat .groupe-1 .groupe-2 {
-    border-left-width: 2px !important;
-    padding-left: 22px !important;
-    margin-top: 19px !important;
+    border-left-width: 8px !important;
+    padding-left: 26px !important;
+    margin-top: 25px !important;
     padding-top: 8px !important;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p {
-    font-size: 20pt;
+    font-size: 25pt;
+    line-height: 19pt;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p span:nth-child(2):before {
-    margin-top: 1.4px !important;
+    margin-top: -2.5px !important;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p.badge {
-    font-size: 12pt;
-    padding: 2px 6px;
+    font-size: 17pt;
+    padding: 3px 8px;
+    top: -3.5px;
   }
   section.certificat .groupe-1 .section-4 {
-    padding-left: 41px !important;
+    padding-left: 45px !important;
   }
   section.certificat .groupe-1 .section-4 span {
-    line-height: 18pt !important;
+    line-height: 20.4pt !important;
   }
   section.certificat .groupe-1 .section-4 span:nth-child(1) {
     left: -3px !important;
@@ -422,89 +443,115 @@ section.certificat footer p {
   section.certificat .groupe-1 .section-4 span:nth-child(3) {
     left: -24.2px !important;
   }
+  section.certificat .section-2 {
+    margin-top: 16px;
+  }
   section.certificat .section-3, section.certificat .section-5 {
-    font-size: 4vw !important;
+    font-size: 26pt;
   }
   section.certificat .section-5 {
-    line-height: 8pt !important;
-    padding-left: 49px !important;
+    line-height: 18pt !important;
+    padding-left: 79px !important;
   }
   section.certificat footer {
-    left: 25% !important;
+    left: 23% !important;
     font-size: 8pt;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   section.certificat {
-    height: 7cm;
-    font-size: 2vw;
+    border: 6px solid #0aaaea;
+    height: 9.5cm;
+    max-width: 18cm;
+    width: 24cm;
+    font-size: 12pt;
+  }
+  section.certificat p {
+    margin: 7px 0;
+  }
+  section.certificat .content-left {
+    left: 50px;
   }
   section.certificat .content-left .ico-bookmark {
-    font-size: 20pt;
-    top: 2.17cm;
+    font-size: 35pt;
+    top: 3.35cm;
   }
   section.certificat .content-left .ico-bookmark:before {
-    width: 15pt;
+    width: 33.9px;
     top: -270%;
-    height: 2.35cm;
+    height: 4.2cm;
+  }
+  section.certificat .content-left .ico-bookmark:after {
+    height: 55px;
+    width: 55px;
+    top: -38px;
+    left: -11px;
   }
   section.certificat .content-left .ico-certificate {
-    font-size: 40pt;
-    left: -12px;
+    top: 31px;
+    left: -14px;
+  }
+  section.certificat .content-left .ico-certificate svg {
+    width: 62px;
+    height: 62px;
   }
   section.certificat .content-left .ico-certificate .logo {
-    top: 14px;
-    left: 7px;
-    width: 32px;
-    height: 32px;
+    top: 8px;
+    left: 9px;
+    width: 45px;
+    height: 45px;
   }
   section.certificat .content {
-    padding: 17.5px 5px;
-    right: -62px !important;
-    width: 90%;
+    padding: 20px 13px;
+    right: -70px !important;
+    width: 89%;
   }
   section.certificat .content p {
     margin: 4px 0;
   }
   section.certificat .content .title {
-    font-size: 2vw;
+    font-size: 13pt;
+    padding-left: 26px;
   }
   section.certificat .content .title .star {
-    font-size: 7px;
+    font-size: 9.4pt;
+    padding-left: 6px;
   }
   section.certificat .content .title .star i {
-    padding: 0 0px;
+    padding: 0 4.4px;
   }
   section.certificat .content .title .mention {
-    font-size: 7px;
-    top: 15.5px;
-    margin-left: 17px;
+    font-size: -1pt;
+    top: 26px;
+    margin-left: 20px;
   }
   section.certificat .groupe-1 {
-    border-left-width: 11px !important;
-    padding-left: -21px !important;
+    border-left: 15px solid #0aaaea;
+    padding-left: 18px !important;
   }
   section.certificat .groupe-1 .groupe-2 {
-    border-left-width: -2px !important;
-    padding-left: 18px !important;
-    margin-top: 11px !important;
+    border-left-width: 6px !important;
+    padding-left: 22px !important;
+    margin-top: 20px !important;
     padding-top: 7px !important;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p {
-    font-size: 15pt;
+    font-size: 20pt;
+    line-height: 16pt;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p span:nth-child(2):before {
-    margin-top: 4.6px !important;
+    margin-top: -1px !important;
   }
   section.certificat .groupe-1 .groupe-2 .section-1 p.badge {
-    font-size: 8pt;
-    padding: 1px 4px;
+    font-size: 14pt;
+    padding: 2px 6px;
+    top: -2.5px;
   }
   section.certificat .groupe-1 .section-4 {
-    padding-left: 32px !important;
+    padding-left: 38px !important;
   }
   section.certificat .groupe-1 .section-4 span {
-    line-height: 13pt !important;
+    line-height: 16.6pt !important;
   }
   section.certificat .groupe-1 .section-4 span:nth-child(1) {
     left: -3px !important;
@@ -515,25 +562,292 @@ section.certificat footer p {
   section.certificat .groupe-1 .section-4 span:nth-child(3) {
     left: -19.8px !important;
   }
+  section.certificat .section-2 {
+    margin-top: 12px;
+  }
   section.certificat .section-3, section.certificat .section-5 {
-    font-size: 4vw !important;
+    font-size: 21pt;
   }
   section.certificat .section-5 {
-    line-height: -2pt !important;
-    padding-left: 32px !important;
+    line-height: 8pt !important;
+    padding-left: 62px !important;
   }
   section.certificat footer {
-    left: 18.5% !important;
+    left: 19.5% !important;
     font-size: 6.5pt;
   }
 }
 @media screen and (max-width: 576px) {
   section.certificat {
-    font-size: 10pt;
+    border: 4px solid #0aaaea;
+    height: 7cm;
+    max-width: 15.5cm;
+    width: 21.5cm;
+    font-size: 9pt;
   }
-
-  .section-3, .section-5 {
-    font-size: 18pt !important;
+  section.certificat p {
+    margin: 6px 0;
+  }
+  section.certificat .content-left {
+    left: 35px;
+  }
+  section.certificat .content-left .ico-bookmark {
+    font-size: 20pt;
+    top: 2.5cm;
+  }
+  section.certificat .content-left .ico-bookmark:before {
+    width: 19.63px;
+    top: -310%;
+    height: 2.7cm;
+  }
+  section.certificat .content-left .ico-bookmark:after {
+    height: 37px;
+    width: 37px;
+    top: -25px;
+    left: -9px;
+  }
+  section.certificat .content-left .ico-certificate {
+    top: 37px;
+    left: -10px;
+  }
+  section.certificat .content-left .ico-certificate svg {
+    width: 40px;
+    height: 40px;
+  }
+  section.certificat .content-left .ico-certificate .logo {
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  section.certificat .content {
+    padding: 17.5px 11px;
+    right: -50px !important;
+    width: 90%;
+  }
+  section.certificat .content p {
+    margin: 2px 0;
+  }
+  section.certificat .content .title {
+    font-size: 10pt;
+    padding-left: 24px;
+  }
+  section.certificat .content .title .star {
+    font-size: 6.6pt;
+    padding-left: 4px;
+  }
+  section.certificat .content .title .star i {
+    padding: 0 2.6px;
+  }
+  section.certificat .content .title .mention {
+    font-size: -7pt;
+    top: 21.5px;
+    margin-left: 15px;
+  }
+  section.certificat .groupe-1 {
+    border-left: 11px solid #0aaaea;
+    padding-left: 12px !important;
+  }
+  section.certificat .groupe-1 .groupe-2 {
+    border-left-width: 4px !important;
+    padding-left: 18px !important;
+    margin-top: 15px !important;
+    padding-top: 6px !important;
+  }
+  section.certificat .groupe-1 .groupe-2 .section-1 p {
+    font-size: 15pt;
+    line-height: 13pt;
+  }
+  section.certificat .groupe-1 .groupe-2 .section-1 p span:nth-child(2):before {
+    margin-top: 0.5px !important;
+  }
+  section.certificat .groupe-1 .groupe-2 .section-1 p.badge {
+    font-size: 11pt;
+    padding: 1px 4px;
+    top: -1.5px;
+  }
+  section.certificat .groupe-1 .section-4 {
+    padding-left: 29px !important;
+  }
+  section.certificat .groupe-1 .section-4 span {
+    line-height: 12.8pt !important;
+  }
+  section.certificat .groupe-1 .section-4 span:nth-child(1) {
+    left: -3px !important;
+  }
+  section.certificat .groupe-1 .section-4 span:nth-child(2) {
+    left: -9.2px !important;
+  }
+  section.certificat .groupe-1 .section-4 span:nth-child(3) {
+    left: -15.4px !important;
+  }
+  section.certificat .section-2 {
+    margin-top: 8px;
+  }
+  section.certificat .section-3, section.certificat .section-5 {
+    font-size: 16pt;
+  }
+  section.certificat .section-5 {
+    line-height: -2pt !important;
+    padding-left: 41px !important;
+  }
+  section.certificat footer {
+    left: 17.6% !important;
+    font-size: 5pt;
+  }
+}
+@media screen and (max-width: 430px) {
+  section.certificat {
+    border: 2px solid #0aaaea;
+    height: 4.5cm;
+    max-width: 13cm;
+    width: 19cm;
+    font-size: 6pt;
+  }
+  section.certificat p {
+    margin: 5px 0;
+  }
+  section.certificat .content-left {
+    left: 20px;
+  }
+  section.certificat .content-left .ico-bookmark {
+    font-size: 5pt;
+    top: 0.6cm;
+  }
+  section.certificat .content-left .ico-bookmark:before {
+    width: 5px;
+    top: -350%;
+    height: 0.7cm;
+  }
+  section.certificat .content-left .ico-bookmark:after {
+    height: 32px;
+    width: 32px;
+    top: -17px;
+    left: -13px;
+  }
+  section.certificat .content-left .ico-certificate {
+    top: 0px;
+    left: -6px;
+  }
+  section.certificat .content-left .ico-certificate svg {
+    width: 30px;
+    height: 30px;
+  }
+  section.certificat .content-left .ico-certificate .logo {
+    top: 2.5px;
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+  }
+  section.certificat .content {
+    padding: 15px 9px;
+    right: -30px !important;
+    width: 91%;
+  }
+  section.certificat .content p {
+    margin: 0px 0;
+  }
+  section.certificat .content .title {
+    font-size: 7pt;
+    padding-left: 22px;
+  }
+  section.certificat .content .title .star {
+    font-size: 3.8pt;
+    padding-left: 2px;
+  }
+  section.certificat .content .title .star i {
+    padding: 0 0.8px;
+  }
+  section.certificat .content .title .mention {
+    font-size: -13pt;
+    top: 17px;
+    margin-left: 10px;
+  }
+  section.certificat .groupe-1 {
+    border-left: 7px solid #0aaaea;
+    padding-left: 6px !important;
+  }
+  section.certificat .groupe-1 .groupe-2 {
+    border-left-width: 2px !important;
+    padding-left: 14px !important;
+    margin-top: 10px !important;
+    padding-top: 5px !important;
+  }
+  section.certificat .groupe-1 .groupe-2 .section-1 p {
+    font-size: 10pt;
+    line-height: 10pt;
+  }
+  section.certificat .groupe-1 .groupe-2 .section-1 p span:nth-child(2):before {
+    margin-top: 2px !important;
+  }
+  section.certificat .groupe-1 .groupe-2 .section-1 p.badge {
+    font-size: 8pt;
+    padding: 0px 2px;
+    top: -0.5px;
+  }
+  section.certificat .groupe-1 .section-4 {
+    padding-left: 22px !important;
+  }
+  section.certificat .groupe-1 .section-4 span {
+    line-height: 9pt !important;
+  }
+  section.certificat .groupe-1 .section-4 span:nth-child(1) {
+    left: -3px !important;
+  }
+  section.certificat .groupe-1 .section-4 span:nth-child(2) {
+    left: -7px !important;
+  }
+  section.certificat .groupe-1 .section-4 span:nth-child(3) {
+    left: -11px !important;
+  }
+  section.certificat .section-2 {
+    margin-top: 4px;
+  }
+  section.certificat .section-3, section.certificat .section-5 {
+    font-size: 11pt;
+  }
+  section.certificat .section-5 {
+    line-height: -12pt !important;
+    padding-left: 30px !important;
+  }
+  section.certificat footer {
+    left: 16.7% !important;
+    font-size: 3.5pt;
+  }
+}
+@media screen and (max-width: 430px) {
+  section.certificat .content-left .ico-bookmark {
+    font-size: 20pt;
+    top: 1.5cm;
+    width: 13pt;
+  }
+  section.certificat .content-left .ico-bookmark:before {
+    width: 19.63px;
+    top: -310%;
+    height: 2.7cm;
+  }
+  section.certificat .content-left .ico-bookmark:after {
+    height: 30px;
+    width: 30px;
+    top: -18px;
+    left: -5px;
+  }
+  section.certificat .content-left .ico-certificate {
+    top: 8px;
+    left: -5px;
+  }
+  section.certificat .content .title .mention {
+    top: 11px;
+    margin-left: 7px;
+  }
+  section.certificat .content .section-1 p span:nth-child(2) {
+    margin-left: 9px;
+  }
+  section.certificat .content .section-1 p span:nth-child(2):before {
+    top: 1px;
+    width: 5px;
+    margin-left: -11px;
+    margin-left: -9px;
   }
 }
 
