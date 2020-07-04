@@ -817,6 +817,9 @@ section.certificat.presentation .ico-bookmark:after {
   }
 }
 @media screen and (max-width: 430px) {
+  section.certificat {
+    max-width: 280px !important;
+  }
   section.certificat .content-left .ico-bookmark {
     font-size: 20pt;
     top: 1.5cm;
