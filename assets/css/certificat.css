@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap);
+.page-title, .btn-dowload {
+  animation: apparition 5s;
+}
+
 section.certificat {
   background-color: #0aaaea;
   position: relative;
@@ -13,6 +17,7 @@ section.certificat {
   cursor: default;
 }
 section.certificat .btn-dowload {
+  transition: 1s opacity;
   opacity: 0.5;
   position: absolute;
   right: 5px;
@@ -255,6 +260,14 @@ section.certificat.presentation .ico-bookmark:after {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*global-size .title-size*/
 /*bookmark-top bar-width bar-top bar-height*/
 /* top-certificat-icon width-height-certificat-icon left-shadow-certificat-icon*/
