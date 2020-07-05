@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap);
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 section.certificat {
   background-color: #0aaaea;
   position: relative;
@@ -24,13 +25,13 @@ section.certificat .content-left {
 }
 section.certificat .content-left .ico-bookmark {
   position: relative;
-  color: white;
+  color: #0aaaea;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 section.certificat .content-left .ico-bookmark:before {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: #0aaaea;
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7);
 }
 section.certificat .content-left .ico-bookmark:after {
@@ -38,7 +39,7 @@ section.certificat .content-left .ico-bookmark:after {
   position: absolute;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
   border-radius: 100%;
-  background: white;
+  background: #0aaaea;
 }
 section.certificat .content-left .ico-certificate {
   position: relative;
@@ -52,7 +53,7 @@ section.certificat .content-left .ico-certificate .logo {
 }
 section.certificat .content {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   transform: skewX(-23deg);
   height: 100%;
 }
@@ -64,6 +65,7 @@ section.certificat .content .title {
   font-weight: 800;
   letter-spacing: 2px;
   position: relative;
+  transform: skewX(23deg);
 }
 section.certificat .content .title * {
   margin-top: 0px;
@@ -72,7 +74,6 @@ section.certificat .content .title * {
 section.certificat .content .title .star {
   position: relative;
   top: -2px;
-  transform: skewX(23deg);
 }
 section.certificat .content .title .star i {
   color: #999;
@@ -134,7 +135,7 @@ section.certificat .content .title:hover .mention {
   transition: 0.3s;
   opacity: 1;
 }
-section.certificat .content .section-2, section.certificat .content .section-3, section.certificat .content .section-4, section.certificat .content .section-5, section.certificat .content footer {
+section.certificat .content .section-2, section.certificat .content .section-3, section.certificat .content .section-4, section.certificat .content .section-5, section.certificat .content .section-6, section.certificat .content footer {
   transform: skewX(23deg);
 }
 section.certificat .content .section-1 p {
@@ -191,18 +192,46 @@ section.certificat .content .groupe-1 .groupe-2 {
   margin-top: 35px;
   border-left: 10px solid #0aaaea;
 }
+section.certificat .content .groupe-1 .groupe-2 .section-3 {
+  width: 74%;
+}
+section.certificat .content .groupe-1 .groupe-2 .section-3 #name {
+  border-bottom: 0.1rem dashed #dedede;
+}
 section.certificat .content .section-3, section.certificat .content .section-5 {
   font-family: "Dancing Script", cursive;
 }
+section.certificat .content .section-5 {
+  width: 67%;
+}
+section.certificat .content .section-5 #formation-challenge-name {
+  border-bottom: 0.1rem dashed #dedede;
+}
+section.certificat .content .section-6 span {
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #fff80f;
+}
 section.certificat footer {
+  width: 70%;
   color: #999;
   position: absolute;
   bottom: 0;
   left: 27%;
-  font-size: 11pt;
+  font-size: 15pt;
+}
+section.certificat footer i {
+  display: flex;
+  justify-content: space-between;
 }
 section.certificat footer p {
   display: inline-block;
+}
+section.certificat #tampon {
+  position: absolute;
+  border-radius: 50%;
+  right: 3.5vw;
+  bottom: 10vh;
 }
 section.certificat.presentation {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 2.5px -2.5px rgba(10, 170, 234, 0.95), 5px -5px rgba(10, 170, 234, 0.9), 7.5px -7.5px rgba(10, 170, 234, 0.85), 10px -10px 2px rgba(0, 0, 0, 0.3);
@@ -218,6 +247,7 @@ section.certificat.presentation .ico-bookmark:after {
 /* top-certificat-icon width-height-certificat-icon left-shadow-certificat-icon*/
 /* top-shadow-certificat-icon left-shadow-certificat-icon*/
 /* top left-logo width-height */
+/* pading-left */
 /* pading-left */
 /* pading-left */
 /* left */
@@ -335,9 +365,17 @@ section.certificat.presentation .ico-bookmark:after {
     line-height: 28pt !important;
     padding-left: 95px !important;
   }
+  section.certificat .section-6 {
+    margin-top: 40px;
+    padding-left: 95px !important;
+  }
   section.certificat footer {
     left: 23% !important;
     font-size: 9.5pt;
+  }
+  section.certificat #tampon {
+    width: 80px;
+    height: 80px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -454,9 +492,17 @@ section.certificat.presentation .ico-bookmark:after {
     line-height: 18pt !important;
     padding-left: 79px !important;
   }
+  section.certificat .section-6 {
+    margin-top: 33px;
+    padding-left: 79px !important;
+  }
   section.certificat footer {
     left: 23% !important;
     font-size: 8pt;
+  }
+  section.certificat #tampon {
+    width: 60px;
+    height: 60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -573,9 +619,17 @@ section.certificat.presentation .ico-bookmark:after {
     line-height: 8pt !important;
     padding-left: 62px !important;
   }
+  section.certificat .section-6 {
+    margin-top: 26px;
+    padding-left: 62px !important;
+  }
   section.certificat footer {
     left: 19.5% !important;
     font-size: 6.5pt;
+  }
+  section.certificat #tampon {
+    width: 45px;
+    height: 45px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -692,9 +746,17 @@ section.certificat.presentation .ico-bookmark:after {
     line-height: -2pt !important;
     padding-left: 41px !important;
   }
+  section.certificat .section-6 {
+    margin-top: 19px;
+    padding-left: 41px !important;
+  }
   section.certificat footer {
     left: 17.6% !important;
     font-size: 5pt;
+  }
+  section.certificat #tampon {
+    width: 30px;
+    height: 30px;
   }
 }
 @media screen and (max-width: 430px) {
@@ -811,9 +873,17 @@ section.certificat.presentation .ico-bookmark:after {
     line-height: -12pt !important;
     padding-left: 30px !important;
   }
+  section.certificat .section-6 {
+    margin-top: 12px;
+    padding-left: 30px !important;
+  }
   section.certificat footer {
     left: 16.7% !important;
     font-size: 3.5pt;
+  }
+  section.certificat #tampon {
+    width: 25px;
+    height: 25px;
   }
 }
 @media screen and (max-width: 430px) {
