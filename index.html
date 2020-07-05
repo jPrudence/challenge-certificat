@@ -5,8 +5,6 @@
 	<title>Certificat</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 	<link rel="icon" href="image/logo.png" type="image/gif">
 
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -14,10 +12,10 @@
 
 	<link href="assets/css/certificat.min.css" rel="stylesheet">
 
-
+	<link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
 </head>
 <body>
-	<h1>Techzara challenge \JPrudence <a class="lien___" href="mode_presentation.html">(  <i class="fa fa-link"></i> présentation )</a></h1>
+	<h4>Techzara challenge \JPrudence <span class="ec ec-yum">update</span> <a class="lien___" href="mode_presentation.html">(  <i class="fa fa-link"></i> présentation )</a></h4>
 
 	<div class="certificats">
 
@@ -49,45 +47,46 @@
 				<div class="groupe-1">
 					<div class="title">
 						<p>CERTIFICATE</p>
-						<p class="mention"><span class="title-mention">Mention :</span> <span>bien</span></p>
-						<div class="star" note="4"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+						<div class="star" note="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
 						</div>
 					</div>
 					<div class="groupe-2">
 						<div class="section-1">
-							<p> <span>SECO</span><span>WARWICK</span></p>
-							<p class="badge">S.A.</p>
+							<p><u>Techzara Madagascar</u></p>
 						</div>
 						<div class="section-2">
-							<p> proudly announces that</p>
+							<p>This certificate is proudly presented to :</p>
 						</div>
 						<div class="section-3">
-							<p> Curabitur varius lectus</p>
+							<p id="name">RAVELONTSOA Jean Prudence</p>
 						</div>
 					</div>
 					<div class="section-4">
 						<p>
-							<span>is official Sales and Services</span>
-							<span>representative for the</span>
-							<span>territory of:</span>
+							<span>Has successfully completed in:</span>
 						</p>
 					</div>
 				</div>
 
 				<div class="section-5">
-					<p>
-						Lorem ipsum dolor site amet
+					<p id="formation-challenge-name">
+						Certificate Challenge <span class="ec ec-stuck-out-tongue-winking-eye">update</span>
 					</p>
 				</div>
-
+				<div class="section-6">
+					<p>
+						Challenge: <span>Frontend</span> | Mention: <span>Excellent</span>
+					</p>
+				</div>
 			</div>
 			<footer>
 				<i>
-					<p>Sweebotzin 2017</p>
-					<p>No. 2017/SW/0010/</p>
-					<p>valid for one year</p>
+					<p>Techzara <script>document.write((new Date()).getFullYear().toString())</script></p>
+					<p>No. <span id="cerificate-number">40/2020</span></p>
+					<p>ID : <span id="cerificate-id">2020TZ40</span></p>
 				</i>
 			</footer>
+			<img id="tampon" src="image/logo.jpeg" alt="">
 		</div>
 	</section>
 </div>
@@ -100,11 +99,13 @@
 		text-align: center;
 		font-family: 'Dancing Script', cursive;
 	}
+
 	.certificats{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
+
 	.container-certificat{
 		background: url(image/fond_certificat.png);
 	}
@@ -114,8 +115,22 @@
 		margin-left: 10px;
 		text-decoration: none;
 	}
+
 	.lien___ i{
 		font-size: 8pt;
+	}
+
+	.ec-stuck-out-tongue-winking-eye{
+		color: #f58f38;
+		font-size: 2.2vw;
+	}
+
+	.ec-yum{
+		color: #ea9b0a;
+	}
+
+	#tampon{
+		filter: grayscale() blur(2px);
 	}
 </style>
 
