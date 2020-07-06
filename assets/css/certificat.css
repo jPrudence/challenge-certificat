@@ -16,16 +16,17 @@ section.certificat {
   display: block !important;
   cursor: default;
 }
-section.certificat .btn-dowload {
-  transition: 1s opacity;
+section.certificat .btns-dowload {
   opacity: 0.5;
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 0;
   z-index: 500;
+}
+section.certificat .btns-dowload .btn-dowload {
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 5px 10px;
   color: #0aaaea;
   background-color: rgba(10, 170, 234, 0.2);
   border: 2px solid #0aaaea;
