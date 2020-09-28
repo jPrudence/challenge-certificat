@@ -16,16 +16,17 @@ section.certificat {
   display: block !important;
   cursor: default;
 }
-section.certificat .btn-dowload {
-  transition: 1s opacity;
+section.certificat .btns-dowload {
   opacity: 0.5;
   position: absolute;
   right: 5px;
-  top: 5px;
+  top: 0;
   z-index: 500;
+}
+section.certificat .btns-dowload .btn-dowload {
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 5px 10px;
   color: #0aaaea;
   background-color: rgba(10, 170, 234, 0.2);
   border: 2px solid #0aaaea;
@@ -40,30 +41,34 @@ section.certificat .container-certificat {
 section.certificat .content-left {
   user-select: none;
   position: absolute;
+  background-color: transparent;
 }
-section.certificat .content-left .ico-bookmark {
-  position: relative;
-  color: #0aaaea;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-}
-section.certificat .content-left .ico-bookmark:before {
+section.certificat .content-left .ico-bookmark::before, section.certificat .content-left .ico-bookmark::after {
   content: "";
   position: absolute;
-  background-color: #0aaaea;
-  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7);
+  top: -20%;
+  height: 110%;
+  width: 100%;
 }
-section.certificat .content-left .ico-bookmark:after {
-  content: "";
-  position: absolute;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
-  border-radius: 100%;
-  background: #0aaaea;
+section.certificat .content-left .ico-bookmark::before {
+  transform: skewY(-50deg);
+  box-shadow: -30px 30px 10px -23px rgba(0, 0, 0, 0.2);
+}
+section.certificat .content-left .ico-bookmark::after {
+  transform: skewY(50deg);
+  right: 0;
+  box-shadow: 30px 30px 10px -23px rgba(0, 0, 0, 0.2);
 }
 section.certificat .content-left .ico-certificate {
-  position: relative;
+  position: absolute;
+  bottom: 20%;
 }
 section.certificat .content-left .ico-certificate svg {
-  z-index: 2000;
+  position: relative;
+}
+section.certificat .content-left .ico-certificate::after {
+  transform: skewY(50deg);
+  right: 0;
 }
 section.certificat .content-left .ico-certificate .logo {
   position: absolute;
@@ -289,34 +294,18 @@ section.certificat.presentation .ico-bookmark:after {
     margin: 9px 0;
   }
   section.certificat .content-left {
-    left: 80px;
-  }
-  section.certificat .content-left .ico-bookmark {
-    font-size: 65pt;
-    top: 4.6cm;
-  }
-  section.certificat .content-left .ico-bookmark:before {
-    width: 63px;
-    top: -190%;
-    height: 5.5cm;
-  }
-  section.certificat .content-left .ico-bookmark:after {
-    height: 100px;
-    width: 100px;
-    top: -67px;
-    left: -20px;
-  }
-  section.certificat .content-left .ico-certificate {
-    top: 5px;
-    left: -22px;
+    left: 60px;
+    width: 91px;
+    height: 55%;
   }
   section.certificat .content-left .ico-certificate svg {
     width: 106px;
     height: 106px;
+    left: -7px;
   }
   section.certificat .content-left .ico-certificate .logo {
     top: 13px;
-    left: 14px;
+    left: 7px;
     width: 80px;
     height: 80px;
   }
@@ -367,19 +356,8 @@ section.certificat.presentation .ico-bookmark:after {
     top: -4.5px;
   }
   section.certificat .groupe-1 .section-4 {
-    padding-left: 54px !important;
-  }
-  section.certificat .groupe-1 .section-4 span {
-    line-height: 24.2pt !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(1) {
-    left: -3px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(2) {
-    left: -15.8px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(3) {
-    left: -28.6px !important;
+    padding-left: 48px !important;
+    line-height: 28pt !important;
   }
   section.certificat .section-2 {
     margin-top: 20px;
@@ -416,34 +394,18 @@ section.certificat.presentation .ico-bookmark:after {
     margin: 8px 0;
   }
   section.certificat .content-left {
-    left: 65px;
-  }
-  section.certificat .content-left .ico-bookmark {
-    font-size: 50pt;
-    top: 4.6cm;
-  }
-  section.certificat .content-left .ico-bookmark:before {
-    width: 48px;
-    top: -230%;
-    height: 5.2cm;
-  }
-  section.certificat .content-left .ico-bookmark:after {
-    height: 82px;
-    width: 82px;
-    top: -55px;
-    left: -18px;
-  }
-  section.certificat .content-left .ico-certificate {
-    top: 43px;
-    left: -18px;
+    left: 47px;
+    width: 69px;
+    height: 55%;
   }
   section.certificat .content-left .ico-certificate svg {
     width: 84px;
     height: 84px;
+    left: -7px;
   }
   section.certificat .content-left .ico-certificate .logo {
     top: 12px;
-    left: 12px;
+    left: 5px;
     width: 60px;
     height: 60px;
   }
@@ -494,19 +456,8 @@ section.certificat.presentation .ico-bookmark:after {
     top: -3.5px;
   }
   section.certificat .groupe-1 .section-4 {
-    padding-left: 45px !important;
-  }
-  section.certificat .groupe-1 .section-4 span {
-    line-height: 20.4pt !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(1) {
-    left: -3px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(2) {
-    left: -13.6px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(3) {
-    left: -24.2px !important;
+    padding-left: 42px !important;
+    line-height: 28pt !important;
   }
   section.certificat .section-2 {
     margin-top: 16px;
@@ -543,34 +494,18 @@ section.certificat.presentation .ico-bookmark:after {
     margin: 7px 0;
   }
   section.certificat .content-left {
-    left: 50px;
-  }
-  section.certificat .content-left .ico-bookmark {
-    font-size: 35pt;
-    top: 3.35cm;
-  }
-  section.certificat .content-left .ico-bookmark:before {
-    width: 33.9px;
-    top: -270%;
-    height: 4.2cm;
-  }
-  section.certificat .content-left .ico-bookmark:after {
-    height: 55px;
-    width: 55px;
-    top: -38px;
-    left: -11px;
-  }
-  section.certificat .content-left .ico-certificate {
-    top: 31px;
-    left: -14px;
+    left: 34px;
+    width: 47px;
+    height: 55%;
   }
   section.certificat .content-left .ico-certificate svg {
     width: 62px;
     height: 62px;
+    left: -7px;
   }
   section.certificat .content-left .ico-certificate .logo {
     top: 8px;
-    left: 9px;
+    left: 2px;
     width: 45px;
     height: 45px;
   }
@@ -622,18 +557,7 @@ section.certificat.presentation .ico-bookmark:after {
   }
   section.certificat .groupe-1 .section-4 {
     padding-left: 38px !important;
-  }
-  section.certificat .groupe-1 .section-4 span {
-    line-height: 16.6pt !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(1) {
-    left: -3px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(2) {
-    left: -11.4px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(3) {
-    left: -19.8px !important;
+    line-height: 28pt !important;
   }
   section.certificat .section-2 {
     margin-top: 12px;
@@ -670,34 +594,18 @@ section.certificat.presentation .ico-bookmark:after {
     margin: 6px 0;
   }
   section.certificat .content-left {
-    left: 35px;
-  }
-  section.certificat .content-left .ico-bookmark {
-    font-size: 20pt;
-    top: 2.5cm;
-  }
-  section.certificat .content-left .ico-bookmark:before {
-    width: 19.63px;
-    top: -310%;
-    height: 2.7cm;
-  }
-  section.certificat .content-left .ico-bookmark:after {
-    height: 37px;
-    width: 37px;
-    top: -25px;
-    left: -9px;
-  }
-  section.certificat .content-left .ico-certificate {
-    top: 37px;
-    left: -10px;
+    left: 21px;
+    width: 25px;
+    height: 55%;
   }
   section.certificat .content-left .ico-certificate svg {
     width: 40px;
     height: 40px;
+    left: -7px;
   }
   section.certificat .content-left .ico-certificate .logo {
     top: 5px;
-    left: 5px;
+    left: -2px;
     width: 30px;
     height: 30px;
   }
@@ -749,18 +657,7 @@ section.certificat.presentation .ico-bookmark:after {
   }
   section.certificat .groupe-1 .section-4 {
     padding-left: 29px !important;
-  }
-  section.certificat .groupe-1 .section-4 span {
-    line-height: 12.8pt !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(1) {
-    left: -3px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(2) {
-    left: -9.2px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(3) {
-    left: -15.4px !important;
+    line-height: 28pt !important;
   }
   section.certificat .section-2 {
     margin-top: 8px;
@@ -797,34 +694,18 @@ section.certificat.presentation .ico-bookmark:after {
     margin: 5px 0;
   }
   section.certificat .content-left {
-    left: 20px;
-  }
-  section.certificat .content-left .ico-bookmark {
-    font-size: 5pt;
-    top: 0.6cm;
-  }
-  section.certificat .content-left .ico-bookmark:before {
-    width: 5px;
-    top: -350%;
-    height: 0.7cm;
-  }
-  section.certificat .content-left .ico-bookmark:after {
-    height: 32px;
-    width: 32px;
-    top: -17px;
-    left: -13px;
-  }
-  section.certificat .content-left .ico-certificate {
-    top: 0px;
-    left: -6px;
+    left: 8px;
+    width: 15px;
+    height: 55%;
   }
   section.certificat .content-left .ico-certificate svg {
     width: 30px;
     height: 30px;
+    left: -7px;
   }
   section.certificat .content-left .ico-certificate .logo {
     top: 2.5px;
-    left: 2.5px;
+    left: -4.5px;
     width: 25px;
     height: 25px;
   }
@@ -876,18 +757,7 @@ section.certificat.presentation .ico-bookmark:after {
   }
   section.certificat .groupe-1 .section-4 {
     padding-left: 22px !important;
-  }
-  section.certificat .groupe-1 .section-4 span {
-    line-height: 9pt !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(1) {
-    left: -3px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(2) {
-    left: -7px !important;
-  }
-  section.certificat .groupe-1 .section-4 span:nth-child(3) {
-    left: -11px !important;
+    line-height: 28pt !important;
   }
   section.certificat .section-2 {
     margin-top: 4px;
@@ -916,25 +786,19 @@ section.certificat.presentation .ico-bookmark:after {
   section.certificat {
     max-width: 280px !important;
   }
-  section.certificat .content-left .ico-bookmark {
-    font-size: 20pt;
-    top: 1.5cm;
-    width: 13pt;
+  section.certificat .content-left .ico-bookmark::before {
+    box-shadow: -30 30px 10px -23px rgba(0, 0, 0, 0.2);
   }
-  section.certificat .content-left .ico-bookmark:before {
-    width: 19.63px;
-    top: -310%;
-    height: 2.7cm;
+  section.certificat .content-left .ico-bookmark::after {
+    box-shadow: 30px 30px 10px -23px rgba(0, 0, 0, 0.2);
   }
-  section.certificat .content-left .ico-bookmark:after {
+  section.certificat .content-left .ico-certificate:before {
     height: 30px;
     width: 30px;
     top: -18px;
-    left: -5px;
   }
-  section.certificat .content-left .ico-certificate {
-    top: 8px;
-    left: -5px;
+  section.certificat .content-left .ico-certificate:after {
+    height: 2.7cm;
   }
   section.certificat .content .title .mention {
     top: 11px;
